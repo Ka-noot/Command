@@ -175,17 +175,17 @@
                 },
                 {
                     "name": "IncreaseNum",
-                    "type": "Value",
-                    "id": "661e0ea8-b9d2-44cd-af22-954dec7839fd",
+                    "type": "Button",
+                    "id": "5a905f4b-43e8-4b24-afa7-cfcf22b7c4db",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 },
                 {
-                    "name": "NewAction",
+                    "name": "DecreaseNum",
                     "type": "Value",
-                    "id": "eb422d2b-b82a-42cb-afed-66105f07822e",
+                    "id": "ecc6bbe9-16d1-425d-bb4f-a01c9b0f5cef",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -239,8 +239,8 @@
                 },
                 {
                     "name": "",
-                    "id": "958f6289-97c0-493b-bf3e-d4c60dd12b69",
-                    "path": "<Keyboard>/u",
+                    "id": "db75d288-af25-408f-87e2-5eb87b5e7727",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -250,12 +250,12 @@
                 },
                 {
                     "name": "",
-                    "id": "278d779c-fd91-47ac-b484-6b9ac50473bf",
-                    "path": "<Keyboard>/f",
+                    "id": "6652bf85-b1c8-4fa2-a558-5e1865a58101",
+                    "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "NewAction",
+                    "action": "DecreaseNum",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

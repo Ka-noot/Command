@@ -4,29 +4,15 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    public static PlayerManager controller;
-
-    public PlayerAction inputAction;
+    public static PlayerManager instance;
 
     public GameObject player;
-    /*private void OnEnable()
-    {
-        inputAction.Enable();
-    }
-
-    private void OnDisable()
-    {
-        inputAction.Disable();
-    }*/
-
-    //start is called before the first frame update
-    void Awake()
-    {
-        //instance
-        if (controller == null)
+    public PlayerController pc; 
+    
+    private void Awake() {
+        if(instance == null)
         {
-            controller = this;
+            instance = this;
         }
-        inputAction = new PlayerAction();
     }
 }
