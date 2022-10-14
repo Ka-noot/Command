@@ -11,13 +11,11 @@ public class ScoreCommand : ICommand
     }
     public void IncreaseNum()
     {
-        ScoreChange.ChangeScore();
-        Debug.Log("SECOND");
+        ScoreChange.AddScore();
     }
 
     public void DecreaseNum()
     {
-        ScoreChange.ShowScore();
-        Debug.Log("SECOND");
+        ScoreChange.SubtractScore();
     }
 }

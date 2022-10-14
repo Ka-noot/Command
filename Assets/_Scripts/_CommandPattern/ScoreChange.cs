@@ -8,15 +8,15 @@ public class ScoreChange : MonoBehaviour
     public static ScoreChange instance;
     public static int score = 0;
    
-    public static void ShowScore()
+    public static void SubtractScore()
     {
-        score++;
+        score--;
         UIManager.GetInstance().scoreDisplay.text = "Points= " + score;
         Debug.Log(score);
     }
-    public static void ChangeScore()
+    public static void AddScore()
     {
-        score--;
+        score++;
         UIManager.GetInstance().scoreDisplay.text = "Points= " + score;
         Debug.Log(score);
     }
